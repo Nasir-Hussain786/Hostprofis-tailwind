@@ -1,1381 +1,1268 @@
 <!doctype html>
 <html>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/ca86787c55.js"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>Demo</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="bg-[#301900] text-white py-4 ">
-        <ul class="flex justify-center gap-6 md:gap-20">
-          <li
-            class="flex items-center md:flex md:items-center text-[13px] md:text-[16px] font-[700]"><img
-              class="size-6  md:size-[24px] mr-[12px]" src="./assests/aus.png"
-              alt="aus-logo">AUS ÖSTERREICH</li>
-          <li
-            class="flex items-center md:flex md:items-center text-[13px] md:text-[16px] font-[700]"><img
-              class="size-6 md:size-[24px] mr-[12px]" src="./assests/bis.png"
-              alt="bis-zu-logo">BIS ZU 60% GÜNSTIGER</li>
-          <li
-            class="hidden md:block lg:flex flex items-center text-[16px] font-[700]"><img
-              class="size-[24px] mr-[12px]"
-              src="./assests/jed.png" alt="jederzeit-kundbar-logo">JEDERZEIT
-            KÜNDBAR</li>
-          <li
-            class="hidden md:block lg:flex flex items-center text-[16px] font-[700]"><img
-              class="size-[24px] mr-[12px]"
-              src="./assests/kuden.png" alt="kunden-logo">40.000+ KUNDEN</li>
-        </ul>
-      </div>
-
-      <nav class="border-gray-200 bg-[#FAF4EB]">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./assests/hostprofis-logo.svg" class="h-8"
-              alt="Flowbite Logo" />
-          </a>
-          <button data-collapse-toggle="navbar-solid-bg" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-solid-bg" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-            <ul
-              class="flex items-center flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-              <li>
-                <a href="#"
-                  class="block  px-3 md:p-0 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page">FUNKTIONEN</a>
-                <div class="border-b border-1"></div>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PREISE</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRICING</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">REVIEWS</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">VERGLEICH</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
-              </li>
-
-              <li>
-                <button
-                  class="text-[#AB8900] border-2 p-3  rounded-[100px] cursor-pointer flex items-center">Beratung
-                  Vereinbaren <img src="./assests/beratung-arrow.png"
-                    alt="beratung-arrow"
-                    class="size-3 ml-[10px]"></button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <hr class=" border-[#FAC800] border-1 ">
-    </header>
-
-    <!-- === section start === -->
-    <section>
-      <div class="flex flex-col justify-center md:gap-23 md:flex md:flex-row">
-
-        <div class="mt-7 md:mt-[113px]">
-          <div class="flex mb-2 ml-[20px]">
-            <img src="./assests/golden-star.png" alt="golden-star-img"
-              class="w-22 md:w-28 mr-[10px]">
-            <p class="text-[14px]">Die <strong>#1</strong> bei <strong>40.000+
-                Unternehmen</strong></p>
-          </div>
-
-          <div>
-            <h1
-              class="text-[24px] ml-[20px] md:text-5xl w-[625px] font-[700] mb-[16px]">Sie
-              sind von der
-              ISDN <span><br> Abschaltung betroffen?</span></h1>
-            <p
-              class="text-sm md:text-2xl w-[620px] mb-[26px] ml-[20px]">Wechseln
-              Sie in nur 14
-              Tagen zu moderner Cloud- <br> Telefonie – ohne
-              hohe Kosten, ohne Stress und <br> ohne Unterbrechungen.</p>
-          </div>
-
-          <div>
-            <div class="flex items-center mb-[9px]">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon"
-                class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
-              <p class="text-[14px] md:text-2xl">Ihre Telefonnummern
-                <strong>bleiben
-                  erhalten </strong>
-              </p>
-            </div>
-
-            <div class="flex items-center mb-[9px]">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon"
-                class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
-              <p class="text-[14px] md:text-2xl">Keine<strong> teuren
-                  Anschaffungskosten
-                </strong></p>
-            </div>
-
-            <div class="flex items-center mb-[31px]">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon"
-                class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
-              <p class="text-[14px] md:text-2xl">Betreuung durch unser<strong>
-                  österreichisches Team </strong></p>
-            </div>
-          </div>
-
-          <div
-            class=" border-[#FAC800] border-1 w-[335px] h-[221px] md:w-[537px] py-6 px-6 rounded-[14px] ml-5">
-            <div>
-              <p
-                class="w-[299px] md:w-[470px] text-[14px] md:text-[15px] leading-[24px] text-[#18181B] mb-[12px]">"Unsere
-                ISDN-Leitung wurde mit nur
-                6 Wochen Frist gekündigt. Hostprofis hat unser neues System in
-                nur 14 Tagen eingerichtet und wir konnten
-                alle Nummern behalten. Keine Ausfallzeit, kein Stress."</p>
-            </div>
-
-            <div class="flex items-center">
-              <img src="./assests/gregor-img.png" alt="gregor-img"
-                class="size-[43px]">
-              <div class="ml-[12px] flex items-center md:flex-col">
-                <p class="font-bold text-[14px] md:text-[16px]">Gregor Zeisl</p>
-                <img src="./assests/golden-star.png" alt="golden-star-img"
-                  class="ml-1 h-4 w-20 md:h-5 md:w-25">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- === form === -->
-
-        <div
-          class="mt-[50px] md:mt-[55px] bg-[#FAF7EB] pt-[35px] pb-[29px] md:py-[38px] md:px-[32px] rounded-[20px] border-[#FAC800] border-1 mb-[79px] w-[335px] md:w-[550px] md:h-[720px] ml-[20px] md:ml-0">
-          <h2
-            class="font-[800] text-[24px] md:text-[28px] text-center md:w-[466px] mb-[34px]">Jetzt
-            100% kostenlos <br class="md:hidden"> und unverbindlich <br
-              class="md:hidden">
-            beraten lassen!</h2>
-
-          <form action>
-            <div class="md:flex">
-              <div class="ml-[22px]">
-                <p
-                  class="text-[#344054] text-[12px] md:text-[14px] md-[3px] md:mb-[6px]">Vor-
-                  und
-                  Nachname</p>
-                <input type="text" placeholder="Max Mustermann"
-                  class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
-              </div>
-
-              <div class="ml-[22px] md:ml-[12px]">
-                <p class="text-[#344054] text-[14px] mb-[6px]">Firmenname</p>
-                <input type="text" placeholder="Mustermann GmbH"
-                  class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
-              </div>
-            </div>
-
-            <div class="md:flex">
-              <div class="ml-[22px]">
-                <p class="text-[#344054] text-[14px] mb-[6px]">Email</p>
-                <input type="text" placeholder="max@mustermann.at"
-                  class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
-              </div>
-
-              <div class="ml-[22px] md:ml-[12px]">
-                <p class="text-[#344054] text-[14px] mb-[6px]">Telefonnummer</p>
-                <input type="text" placeholder="+43 123456789"
-                  class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
-              </div>
-            </div>
-
-            <div class="md:ml-6 mt-[5px]">
-              <p
-                class="ml-[22px] md:ml-[0px] text-[#344054] text-[12px]  md:text-[14px] mb-[6px]">Wie
-                viele
-                Mitarbeiter hat Ihr Unternehmen?</p>
-
-              <select name id
-                class="text-[#667085] text-[14px] bg-[#fff] border-[#D0D5DD] border-1 md:py-[14px] py-[11px] px-[10px] md:pr-[155px] md:pl-[26px] rounded-[80px] mb-[22px] md:mb-[34px] ml-[22px] md:ml-[0px]">
-                <option value>Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
-              </select>
-
-              <div class="flex justify-center">
-                <button
-                  class="bg-[#AB8900] py-[15px] px-[39px] md:py-[16px] md:px-[95px]  rounded-[63px] md:rounded-[100px] text-[#fff] text-[12px] md:text-[16px] font-[800] cursor-pointer">Jetzt
-                  Kostenlos Beraten Lassen</button>
-              </div>
-
-              <!-- === five logos === -->
-
-              <div class="flex gap-2 justify-center mt-[22px] md:mt-[44px]">
-                <img src="./assests/top-software.png" alt="top-software"
-                  class="w-[55px] h-[70px] md:w-[88px] md:h-[100px]">
-                <img src="./assests/pc-pro.png" alt
-                  class="w-[48px] h-[70px] md:w-[68px] md:h-[100px]">
-                <img src="./assests/Leader-enterprise.png"
-                  alt="leader-enterprise"
-                  class="w-[55px] h-[70px] md:w-[89px] md:h-[100px]">
-                <img src="./assests/captera.png" alt
-                  class="w-[55px] h-[70px] md:w-[89px] md:h-[100px]">
-                <img src="./assests/business-software.png"
-                  alt="business-software"
-                  class="w-[55px] h-[70px] md:w-[44px] md:h-[100px]">
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- === section end === -->
-
-    <!-- === section start -->
-    <section>
-
-      <!-- nine logos together -->
-      <div class="bg-[#FAEFEB] pt-[17px] md:pt-[69px]">
-        <p
-          class="text-center mb-[25px] md:mb-[27px] text-[16px] md:text-xl font-bold"><strong>Die
-            #1 bei 40.000+
-            Unternehmen</strong></p>
-
-        <div
-          class="flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:gap-2 pb-[20px] md:pb-[65px] mb-[52px] md:mb-[76px]">
-          <div class="flex gap-7 md:gap-0">
-            <img src="./assests/fuji-tsu.png" alt="fuji-tsu"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/berndorf.png" alt="berndorf"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/fielman.png" alt="fielman"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-          </div>
-
-          <div class="flex gap-7 md:gap-0">
-            <img src="./assests/grohe.png" alt="grohe"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/hectas.png" alt="hectas"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/lindth.png" alt="lindth"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-          </div>
-
-          <div class="flex gap-7 md:gap-0">
-            <img src="./assests/dachser.png" alt="dashser"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/universtat.png" alt="universtat"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-            <img src="./assests/panapina.png" alt="panapina"
-              class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
-          </div>
-        </div>
-
-      </div>
-      <!-- nine logos together end -->
-    </section>
-
-    <section>
-      <!-- nine logos bottom content -->
-      <div>
-        <h1
-          class="md:text-center text-[24px] md:text-[40px] font-[700] mb-[22px] 
-        ml-[22px] md:ml-[0px]">Ihre komplette
-          Cloud Telefonanlage schon ab <br class="md:hidden"> €14,90 pro
-          Nutzer</h1>
-
-        <div class="flex justify-center">
-          <p
-            class="w-[331px] md:w-250 md:text-center leading-[22px] md:leading-[32px] text-[14px] md:text-xl mb-10 md:mb-40">
-            Sie
-            erhalten
-            alle <strong>Premium-Funktionen einer
-              Enterprise-Telefonanlage</strong>, kombiniert mit
-            <strong>maximaler Benutzerfreundlichkeit</strong> und das
-            zu einem <strong>Bruchteil der Kosten</strong>. <br
-              class="md:hidden"> <br class="md:hidden"> Wir kümmern uns
-            um
-            den perfekten Start und den reibungslosen
-            Betrieb – Sie genießen modernste Kommunikationstechnik ohne
-            komplizierte Installation.
-          </p>
-        </div>
-      </div>
-
-      <!-- === six woman images === -->
-      <div
-        class="md:flex md:justify-center md:items-center md:gap-8 md:mb-16 md:mb-58">
-        <div class="w-[330px] h-[236px] md:w-[660px] md:h-[479px]">
-          <img src="./assests/six-woman-img.png" alt="six-woman-img"
-            class="border-[#FAC800] border-2 rounded-[16px] md:rounded-[20px] ml-[22px] md:ml-[0px]">
-        </div>
-
-        <div class="ml-[22px] md:ml-[0px] mt-[28px]">
-          <h1
-            class="text-[22px] md:text-4xl font-bold md:w-130 mb-4 leading-[29px] md:leading-[52px]">Keine
-            IT-Kopfschmerzen beim <br class="md:hidden"> Wechsel in die
-            Cloud</h1>
-
-          <p
-            class="md:w-125 mb-8 text-[14px] md:text-xl leading-[21px] md:leading-[32px]">Wir
-            übernehmen den
-            gesamten Umstieg von der <br class="md:hidden"> alten Telefonanlage
-            in die Cloud für Sie.
-            <strong> Schnell, <br class="md:hidden"> einfach und
-              kostenlos.</strong>
-          </p>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[495px] md:h-[54px] mb-[18px] md:mb-2 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
-              Ihr
-              System ist in nur <strong>14 Tagen einsatzbereit</strong> –
-              professionell eingerichtet und perfekt <br class="md:hidden">
-              konfiguriert. </p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[407px] md:h-[54px] mb-[18px] md:mb-2 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
-              Sie
-              bleiben während dem Umstieg für Ihre <br class="md:hidden"> Kunden
-              <strong>100% ohne
-                Unterbrechung <br class="md:hidden"> erreichbar. </strong> </p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[430px] md:h-[54px] mb-[64px] md:mb-15 md:mb-6 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
-              Wir
-              kümmern uns um die komplette Nummernübertragung, damit
-              <strong>Ihre alten <br class="md:hidden"> Nummern nahtlos weiter
-                funktionieren.</strong>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- === six woman images style end === -->
-    </section>
-
-    <section>
-      <!-- == support section == -->
-
-      <div
-        class="flex flex-col-reverse md:flex md:flex-row md:justify-center md:items-center md:gap-8 md:mb-58">
-
-        <div class="ml-[22px] md:ml-[0px]">
-          <div>
-            <h1
-              class="font-bold text-[22px] md:text-4xl w-120 mb-3 md:mb-5 leading-[29px] md:leading-[52px]">Persönlicher
-              und regionaler <br class="md:hidden"> Support aus Österreich</h1>
-
-            <p
-              class="text-[14px] md:text-xl md:w-135 leading-[21px] md:leading-[32px] md:mb-8 mb-7">Wir
-              sind ein
-              österreichisches Unternehmen mit <br class="md:hidden"> Standorten
-              in allen
-              Bundesländern. Sie erreichen <br class="md:hidden"> uns jederzeit
-              – und bei dringenden
-              Fällen sind wir <br class="md:hidden"> blitzschnell vor Ort!</p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-
-            <p
-              class="md:w-120 mb-[18px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]"><strong>Ihr
-                persönlicher, lokaler Experte kennt <br class="md:hidden"> Ihre
-                Bedürfnisse</strong> –
-              kein lästiges <br class="md:hidden"> Weiterleiten an dutzende
-              Ansprechpartner.</p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-
-            <p
-              class="md:w-120 mb-[18px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]">Unser
-              <strong>
-                Expertenteam </strong> gewährleistet einen <br
-                class="md:hidden"> <strong>reibungslosen
-                Betrieb,</strong> ohne Aufwand für Ihr <br class="md:hidden">
-              Unternehmen.</p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-125 mb-[64px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]">Verlassen
-              Sie sich
-              auf <strong>erstklassigen Support <br class="md:hidden"> aus
-                Österreich</strong> mit
-              persönlicher Betreuung <br class="md:hidden"> vor Ort.</p>
-          </div>
-        </div>
-
-        <div>
-          <img src="./assests/m-and-w-pic.png" alt="m-and-w-pic"
-            class="hidden md:block md:w-[658px] md:h-[
-        479px]">
-
-          <img src="./assests/m-and-w-pic.png" alt="m-and-w-pic"
-            class="md:hidden w-[330px] h-[238px] ml-[22px] mb-[28px]">
-        </div>
-
-      </div>
-    </section>
-    <!-- end support section -->
-
-    <section>
-      <!-- === Business-Telefonie Features Section start === -->
-      <div
-        class="flex flex-col md:flex md:flex-row md:justify-center md:items-center md:gap-22 md:mb-58 ml-[22px]">
-        <div class="w-[330px] h-[234px] md:w-[589px] md:h-[443px]">
-          <img src="./assests/chat-mb-img.png" alt="chat-mb-img"
-            class="border-[#FAC800] border-2 rounded-[20px]">
-        </div>
-
-        <div>
-          <h1
-            class="text-[22px] md:text-4xl font-bold md:w-130 mb-3 md:mb-4 leading-[29px] md:leading-[52px] mt-7 md:mt-0">
-            Über 150
-            Premium Funktionen <br class="md:hidden"> für Ihre
-            Business-Telefonie</h1>
-
-          <p
-            class="md:w-133 mb-7 md:mb-8 text-[14px] md:text-xl leading-[21px] md:leading-[32px]">Mit
-            unserer
-            Cloud-Telefonanlage erhalten Sie alle <br class="md:hidden">
-            Funktionen einer
-            Enterprise-Telefonanlage – nur <br class="md:hidden"> einfacher zu
-            bedienen und zu einem
-            Bruchteil der <br class="md:hidden"> Kosten.</p>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[520px] md:h-[54px] mb-[18px] md:mb-3 text-[14px] md:text-xl leading-[19px] md:leading-[32px]">
-              Eine
-              smarte <strong>digitale Rezeption</strong> leitet Ihre <br
-                class="md:hidden"> Anrufer
-              sofort zum richtigen Ansprechpartner <br class="md:hidden">
-              weiter.</p>
-          </div>
-
-          <div class="flex gap-3">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[521px] md:h-[64px] mb-[18px] md:mb-3 text-[14px] md:text-xl leading-[19px] md:leading-[32px]">
-              Unser
-              <strong>intelligentes Warteschleifensystem</strong> <br
-                class="md:hidden"> mit
-              <strong>Rückrufoptionen</strong> sorgt für <strong>zufriedene <br
-                  class="md:hidden">
-                Kunden.</strong>
-            </p>
-          </div>
-
-          <div class="flex gap-3 mb-16 md:mb-0">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon"
-              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-            <p
-              class="md:w-[510px] md:h-[64px] text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Nahtlose
-              Anrufweiterleitung auf mobile <br class="md:hidden"> Geräte, Call
-              Recording,
-              Konferenzschaltungen, <br class="md:hidden"> <strong>und vieles
-                mehr.</strong></p>
-          </div>
-        </div>
-      </div>
-      <!-- == Business-Telefonie Features Section end == -->
-
-    </section>
-    <!-- === multi-device calling feature Start === -->
-
-    <div class="flex flex-col-reverse md:flex md:flex-row md:justify-center md:items-center md:gap-20 ml-[22px] md:mb-58">
-      <div>
-        <div>
-          <h1
-            class="text-[22px] md:text-4xl font-bold md:w-135 leading-[29px] md:leading-[52px] mb-3 md:mb-5 mt-7">Professionelle <br class="md:hidden">
-            Geschäftsanrufe von jedem <br class="md:hidden"> Gerät aus tätigen</h1>
-          <p class="text-[14px] md:text-xl md:w-135 leading-[21px] md:leading-[32px] mb-7 md:mb-8">Bleiben Sie überall
-            erreichbar – ob im Büro, <br class="md:hidden"> unterwegs oder im Home-Office:</p>
-        </div>
-
-        <div class="flex gap-3">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-          <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] mb-4">Nutzen Sie Ihre
-            geschäftliche Rufnummer auf <br class="md:hidden"> allen Geräten: <strong>Tischtelefon,
-              Smartphone <br class="md:hidden"> oder Computer.</strong></p>
-        </div>
-
-        <div class="flex gap-3">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-          <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] mb-4">Wechseln Sie
-            nahtlos zwischen <br class="md:hidden"> <strong>verschiedenen Arbeitsorten.</strong> Ihre <br class="md:hidden">
-            Erreichbarkeit bleibt konstant.</p>
-        </div>
-
-        <div class="flex gap-3 mb-16">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-          <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] md:mb-4">Ermöglichen Sie
-            Ihrem Team <strong>maximale <br class="md:hidden"> Bewegungsfreiheit</strong> bei
-            gleichbleibend <br class="md:hidden"> <strong>professionellem Auftreten.</strong></p>
-        </div>
-      </div>
-
-      <div>
-        <img src="./assests/telephone-two-mb-img.png" alt="telephone-two-mb-img"
-          class="w-[330px] h-[234px] md:w-[620px] md:h-[440px] rounded-[10px] md:rounded-[20px] border-[#FAC800] border-2">
-      </div>
-    </div>
-    <!-- === multi-device calling feature end === -->
-</section>
-
-    <!-- === microsoft image === -->
-
-    <div class="flex flex-col md:flex md:flex-row md:justify-center md:items-center md:gap-20 mb-13 md:mb-32 ml-[22px] md:ml-0">
-      <div>
-        <img src="./assests/microsoft-img.png" alt="microsoft-img"
-          class="w-[330px] h-[236px] md:w-[620px] md:h-[443px] mb-7 md:mb-0">
-      </div>
-
-      <div>
-        <div>
-          <h1 class="text-[22px] md:text-4xl font-bold md:w-130 leading-[29px] md:leading-[52px] mb-3 md:mb-4">Nahtlose
-            Integration mit Ihren <br class="md:hidden"> bestehenden Systemen</h1>
-          <p class="text-[14px] md:text-xl leading-[21px] md:leading-[32px] md:w-125 mb-7 md:mb-8">Vernetzen Sie Ihre
-            Kommunikation <strong>auf Knopfdruck</strong> <br class="md:hidden"> mit all Ihren Tools
-            und Geschäftsprozessen:</p>
-        </div>
-
-        <div class="flex gap-3">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[24px] h-[24px]">
-          <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-122 mb-[18px] md:mb-2">Steigern Sie Ihre
-            Servicequalität durch <strong> <br class="md:hidden"> sofortigen Zugriff auf
-              Kundeninformationen <br class="md:hidden"> bei eingehenden Anrufen.</strong></p>
-        </div>
-
-        <div class="flex gap-3">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[24px] h-[24px]">
-          <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-90 mb-[18px] md:mb-2">Dokumentieren Sie
-            jede Kundeninteraktion <strong>automatisch</strong> <br class="md:hidden"> in Ihrem
-            CRM-System.</p>
-        </div>
-
-        <div class="flex gap-3">
-          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
-            class="w-[24px] h-[24px]">
-          <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-120 mb-[18px] md:mb-2">Optimieren Sie Ihre
-            Workflows durch direkte <br class="md:hidden"> <strong>Verknüpfung von Telefonaten mit
-              digitalen <br class="md:hidden"> Kundenakten.</strong></p>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/ca86787c55.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Demo</title>
+</head>
+
+<body>
+  <header>
+    <div class="bg-[#301900] text-white py-4 ">
+      <ul class="flex justify-center container mx-auto gap-20">
+        <li class="flex items-center md:flex md:items-center text-[13px] md:text-[16px] font-[700]"><img
+            class="size-6  md:size-[24px] mr-[12px]" src="./assests/aus.png" alt="aus-logo">AUS ÖSTERREICH</li>
+        <li class="flex items-center md:flex md:items-center text-[13px] md:text-[16px] font-[700]"><img
+            class="size-6 md:size-[24px] mr-[12px]" src="./assests/bis.png" alt="bis-zu-logo">BIS ZU 60% GÜNSTIGER</li>
+        <li class="hidden md:block lg:flex flex items-center text-[16px] font-[700]"><img class="size-[24px] mr-[12px]"
+            src="./assests/jed.png" alt="jederzeit-kundbar-logo">JEDERZEIT
+          KÜNDBAR</li>
+        <li class="hidden md:block lg:flex flex items-center text-[16px] font-[700]"><img class="size-[24px] mr-[12px]"
+            src="./assests/kuden.png" alt="kunden-logo">40.000+ KUNDEN</li>
+      </ul>
     </div>
 
-    <!-- === section end === -->
+    <nav class="border-gray-200 bg-[#FAF4EB]">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./assests/hostprofis-logo.svg" class="h-8" alt="Flowbite Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-solid-bg" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex items-center flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block  px-3 md:p-0 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page">FUNKTIONEN</a>
+              <div class="border-b border-1"></div>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PREISE</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRICING</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">REVIEWS</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">VERGLEICH</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
+            </li>
 
-    <!-- === section start === -->
-
-    <section>
-      <div class="bg-[#FAF7EB] border-y-1 border-[#FAC800] md:mb-20">
-        <div class="md:flex md:flex-col  md:items-center pt-13 md:pt-28 md:mb-22  ml-[22px] md:ml-0">
-          <h1 class="text-[24px] leading-[32px] md:leading-0 md:text-[40px] font-bold md:text-center mb-9 md:mb-8">60% weniger Kosten
-            bei <br class="md:hidden"> 100x mehr Leistung</h1>
-
-          <div>
-            <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[18px] md:mb-2">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon" class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-              <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Genießen Sie volle
-                Planungssicherheit durch <br class="md:hidden"> eine
-                <strong>All-inclusive-Pauschale</strong> ohne <br class="md:hidden">
-                Überraschungen.
-              </p>
-            </div>
-
-            <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[18px] md:mb-2">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon" class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-              <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Bis zu <strong>60%
-                  Kostenersparnis</strong> gegenüber <br class="md:hidden"> konventionellen
-                Telefonanlagen – bei deutlich <br class="md:hidden"> mehr Funktionsumfang.</p>
-            </div>
-
-            <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[38px] md:mb-2">
-              <img src="./assests/verified-check-icon.png"
-                alt="verified-check-icon" class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
-              <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]"><strong>Reduzieren Sie Ihre
-                  Mobilfunkkosten</strong> durch <br class="md:hidden"> intelligente Cloud Telefonie
-                auf allen Geräten.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- two card cloud telefonie pakete -->
-
-        <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-8 ml-[22px] md:ml-0">
-          <div
-            class=" bg-[#fff] w-[331px] h-[387px] md:w-[630px] md:h-[400px] rounded-[24px] border-[#FAC800] border-1 pt-[32px] md:pt-[40px] pr-[22px] md:pr-[20px] pl-[22px] md:pl-[52px] mb-8">
-            <div class="flex gap-3 items-center md:flex md:items-center md:gap-5 mb-7">
-              <img src="./assests/telephone-icon.png" alt="telephone-icon"
-                class="w-[29px] h-[29px] md:w-[38px] md:h-[38px]">
-              <p class="text-[18px] md:text-[34px] text-[#C8A101] font-[700]">Cloud Telefonie
-                Pakete</p>
-            </div>
-
-            <div class="flex flex-col md:flex md:flex-row md:gap-12">
-              <div>
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px] font-semibold"><strong>Behalten Sie Ihre
-                      Nummern</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px] font-semibold"><strong>Nutzbar auf jedem
-                      Gerät</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px] font-semibold"><strong>150+ Funktionen
-                      inklusive</strong></p>
-                </div>
-              </div>
-
-              <div>
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px] font-semibold"><strong>Behalten Sie Ihre
-                      Nummern</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Nutzbar auf jedem
-                      Gerät</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-6">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px] font-semibold"><strong>150+ Funktionen
-                      inklusive</strong></p>
-                </div>
-              </div>
-            </div>
-            <hr class="border-[#FAC800] mb-6">
-
-            <!-- hr below text -->
-            <div class="flex gap-8 md:gap-20">
-              <div>
-                <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
-                <p><span
-                    class="text-[#7E6800] text-[17px] md:text-[40px] font-[700]">€14,90</span>
-                  <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
-                </p>
-                <p class="text-[12px] md:text-[16px]">pro Nutzer</p>
-              </div>
-
-              <div>
-                <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
-                <p><span
-                    class="text-[#7E6800] text-[17px] md:text-[40px] font-[700]">€58,90</span>
-                  <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
-                </p>
-                <p class="text-[12px] md:text-[16px]">für unbegrenzte Nutzer</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-[#fff] w-[331px] h-[387px] md:w-[630px] md:h-[400px] rounded-[24px] border-[#FAC800] border-1 pt-[35px] md:pt-[40px] pr-[22px] md:pr-[20px] pl-[22px] md:pl-[52px] ">
-            <div class="flex items-center gap-3 md:flex md:items-center md:gap-5 mb-[24px] md:mb-7">
-              <img src="./assests/prize-tag-icon.png" alt="prize-tag-icon"
-                class="w-[27px] h-[27px] md:w-[38px] md:h-[38px]">
-              <p class="text-[18px] md:text-[34px] text-[#C8A101] font-[700]">Telefon
-                Tarife</p>
-            </div>
-
-            <div class="flex flex-col md:flex md:flex-row md:gap-12">
-              <div>
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Festnetz & Mobil in
-                      AT</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Festnetz & Mobil in
-                      EU</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Unbegrenzte Nutzer</strong></p>
-                </div>
-              </div>
-
-              <div>
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Einfache
-                      Anrufverwaltung</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-3">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Transparente
-                      Preise</strong></p>
-                </div>
-
-                <div class="flex gap-3 mb-6">
-                  <img src="./assests/verified-check-icon.png"
-                    alt="verified-check-icon" class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <p class="text-[12px] md:text-[16px]"><strong>Jederzeit kündbar</strong></p>
-                </div>
-              </div>
-            </div>
-            <hr class="border-[#FAC800] mb-6">
-
-            <!-- hr below text -->
-            <div class="flex gap-8 md:gap-20">
-              <div>
-                <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
-                <p><span class="text-[#7E6800] text-[17px] md:text-[35px] font-[700]">4,9
-                    Cent</span>
-                  <span class="text-[12px] md:text-[25px] font-[700]">/ Minute</span>
-                </p>
-                <p class="text-[9px] md:text-[16px]">bei Freiminuten-Paketen</p>
-              </div>
-
-              <div>
-                <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
-                <p><span
-                    class="text-[#7E6800] text-[17px] md:text-[30px] font-[700]">€14,90</span>
-                  <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
-                </p>
-                <p class="text-[9px] md:text-[16px]">für unbegrentzte Minuten</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end -->
-
-        <div class="flex justify-center">
-          <button
-            class="bg-[#AB8900] py-[15px] px-[59px] md:py-5 md:px-9 rounded-[63px] md:rounded-[100px] text-[#FFFFFF] text-[12px] md:text-[16px] font-extrabold mt-[38px] md:mt-[54px] mb-3 md:mb-[25px]">Jetzt
-            Kostenlos Beraten Lassen</button>
-        </div>
-
-        <div class="flex items-center gap-2 md:gap-4 justify-center mb-14 md:pb-15">
-          <img src="./assests/golden-star.png" alt="golden-star-img"
-            class="w-18 md:w-25">
-          <p class="text-[12px] md:text-[14px]">Über <strong> 40.000 </strong> zufriedene
-            Kunden</p>
+            <li>
+              <button class="text-[#AB8900] border-2 p-3  rounded-[100px] cursor-pointer flex items-center">Beratung
+                Vereinbaren <img src="./assests/beratung-arrow.png" alt="beratung-arrow"
+                  class="size-3 ml-[10px]"></button>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- === section end === -->
+    </nav>
 
-    <!-- === section start === -->
+    <hr class=" border-[#FAC800] border-1 ">
+  </header>
 
-    <section>
-      <!-- twelve cards section -->
+  <!-- === section start === -->
+  <section>
+    <div class="flex flex-col justify-center container mx-auto md:gap-23 md:flex md:flex-row">
 
-      <div class="md:text-center ml-[22px] md:ml-0 mt-13">
-        <h1 class="text-[24px]  md:text-4xl font-bold mb-4 md:mb-5">Das sagen unsere Kunden</h1>
-        <p class="text-[14px] md:text-[18px] mb-8 md:mb-15">Unternehmen wie Ihres vertrauen bereits auf <br class="md:hidden">
-          Hostprofis</p>
-      </div>
-
-      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
-        <!-- === 1st card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p
-              class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Früher
-              hatten unsere Kunden nur unsere
-              privaten Handynummern. Jetzt erreichen sie eine professionelle
-              automatische Zentrale, die sie direkt zum
-              richtigen Ansprechpartner weiterleitet"</p>
-          </div>
-
-          <div class="flex items-center gap-2 md:gap-5">
-            <img src="./assests/michelle-menger.png" alt="michelle-menger"
-              class="w-[43px] h-[43px] md:w-[43px] md:h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Michelle
-                Menger</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
+      <div class="mt-7 md:mt-[113px]">
+        <div class="flex mb-2 ml-[20px]">
+          <img src="./assests/golden-star.png" alt="golden-star-img" class="w-22 md:w-28 mr-[10px]">
+          <p class="text-[14px]">Die <strong>#1</strong> bei <strong>40.000+
+              Unternehmen</strong></p>
         </div>
-        <!-- === 1st card end === -->
 
-        <!-- === 2nd card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5">
-          <div>
-            <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Wir
-              haben jährlich €3.000 nur für Wartung
-              bezahlt. Mit Hostprofis konnten wir unsere Telefonkosten um 55 %
-              senken und alles funktioniert reibungslos!"
+        <div>
+          <h1 class="text-[24px] ml-[20px] md:text-5xl md:w-[625px] font-[700] mb-[16px]">Sie
+            sind von der
+            ISDN <span><br> Abschaltung betroffen?</span></h1>
+          <p class="text-sm md:text-2xl md:w-[620px] mb-[26px] ml-[20px]">Wechseln
+            Sie in nur 14
+            Tagen zu moderner Cloud- <br> Telefonie – ohne
+            hohe Kosten, ohne Stress und <br> ohne Unterbrechungen.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center mb-[9px]">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
+            <p class="text-[14px] md:text-2xl">Ihre Telefonnummern
+              <strong>bleiben
+                erhalten </strong>
             </p>
           </div>
 
-          <div class="flex items-center gap-5">
-            <img src="./assests/jonathan-brendel.png" alt="jonathan-brendel"
-              class="w-[43px] h-[43px] md:w-[43px] md:h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Jonathan
-                Brendel</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
+          <div class="flex items-center mb-[9px]">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
+            <p class="text-[14px] md:text-2xl">Keine<strong> teuren
+                Anschaffungskosten
+              </strong></p>
+          </div>
+
+          <div class="flex items-center mb-[31px]">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="size-[18px] md:size-[25px] mr-[12px] ml-[20px]">
+            <p class="text-[14px] md:text-2xl">Betreuung durch unser<strong>
+                österreichisches Team </strong></p>
           </div>
         </div>
-        <!-- === 2nd card end === --> 
 
-        <!-- === 3rd card start === -->
-
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5">
+        <div class=" border-[#FAC800] border-1 w-[335px] h-[221px] md:w-[537px] py-6 px-6 rounded-[14px] ml-5">
           <div>
-            <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Wir
-              haben jährlich €3.000 nur für Wartung
-              bezahlt. Mit Hostprofis konnten wir unsere Telefonkosten um 55 %
-              senken und alles funktioniert reibungslos!"
-            </p>
+            <p class="w-[299px] md:w-[470px] text-[14px] md:text-[15px] leading-[24px] text-[#18181B] mb-[12px]">"Unsere
+              ISDN-Leitung wurde mit nur
+              6 Wochen Frist gekündigt. Hostprofis hat unser neues System in
+              nur 14 Tagen eingerichtet und wir konnten
+              alle Nummern behalten. Keine Ausfallzeit, kein Stress."</p>
           </div>
 
-          <div class="flex items-center gap-5">
-            <img src="./assests/gregor-img.png" alt="gregor-img"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Gregor
-                Zeisl</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 w-25">
+          <div class="flex items-center">
+            <img src="./assests/gregor-img.png" alt="gregor-img" class="size-[43px]">
+            <div class="ml-[12px] flex items-center md:flex-col">
+              <p class="font-bold text-[14px] md:text-[16px]">Gregor Zeisl</p>
+              <img src="./assests/golden-star.png" alt="golden-star-img" class="ml-1 h-4 w-20 md:h-5 md:w-25">
             </div>
-          </div>
-        </div>
-        <!-- 3rd card end -->
-      </div>
-
-      <!-- === 4th card start === -->
-
-      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
-        <!-- === 4th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 
-          pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p
-              class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Keine
-              Überraschungsrechnungen oder hohe
-              Wartungskosten mehr. Wir zahlen jeden Monat einen festen Betrag,
-              und Hostprofis kümmert sich um alles."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/ben-diemberger.png" alt="ben-diemberger"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Ben
-                Diemberger</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 4th card end === -->
-
-        <!-- === 5th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Als
-              kleines Unternehmen wollten wir
-              professioneller wirken. Die automatischen Begrüßungen und die
-              Anrufweiterleitung begeistern unsere Kunden!"
-            </p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/kilian-kollek.png" alt="kilian-kollek"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Kilian
-                Kollek</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 5th card end === -->
-
-        <!-- === 6th card start === -->
-
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[221px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Ich
-              hatte Angst vor der ISDN-Umstellung,
-              nachdem unser Anbieter uns €4.631 in Rechnung stellen wollte.
-              Hostprofis hat alles für eine einfache
-              monatliche Gebühr ohne zusätzliche Kosten erledigt."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/matheo-cella.png" alt="matheo-cella"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Matheo
-                Cella</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- 6th card end -->
-      </div>
-
-      <!-- 7th card start -->
-      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
-        <!-- === 7th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p
-              class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Keine
-              verpassten Anrufe mehr, kein Chaos mit
-              Mobiltelefonen – alles funktioniert wie ein großes
-              Unternehmenssystem."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/martina-bogen.png" alt="martina-bogen"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Martina
-                Bogen</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 7th card end === -->
-
-        <!-- === 8th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p
-              class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Unser
-              altes System hat uns ein Vermögen für
-              Wartung und Mobilfunkkosten gekostet. Jetzt haben wir bessere
-              Funktionen für die Hälfte der Kosten!"</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/natalie-mateschitz.png" alt="natalie-mateschitz"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Natalie
-                Mateschitz</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 8th card end === -->
-
-        <!-- === 9th card start === -->
-
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p
-              class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Unsere
-              Kunden merken nicht, ob wir im Büro
-              oder unterwegs sind. Das System lässt unser kleines Team wie eine
-              viel größere Organisation wirken."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/oliver-makart.png" alt="oliver-makart"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Oliver
-                Makart</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- 9th card end -->
-      </div>
-
-      <!-- 10th card start -->
-      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-20">
-        <!-- === 10th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Das
-              Beste? Keine Koordination mehr zwischen
-              verschiedenen Anbietern, wenn etwas schiefgeht. Ein Anruf bei
-              Hostprofis, und alles ist geregelt – für einen
-              Bruchteil der Kosten, die wir früher hatten."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/aaron-mesmer.png" alt="aaron-mesmer"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Aaron
-                Mesmer</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 10th card end === -->
-
-        <!-- === 11th card === -->
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
-          <div>
-            <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Als
-              unser ISDN gekündigt wurde, brauchten wir
-              schnell eine zukunftssichere Lösung. Hostprofis hat sich um alles
-              gekümmert – absolut TOP!"</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/tim-dorn.png" alt="tim-dorn"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Tim Dorn</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- === 11th card end === -->
-
-        <!-- === 12th card start === -->
-
-        <div
-          class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-13 md:mb-0">
-          <div>
-            <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Ich
-              war echt nervös wegen dem Wechsel. Aber
-              Hostprofis hat alles organisiert und unser Team an einem
-              Nachmittag geschult."</p>
-          </div>
-
-          <div class="flex items-center gap-5">
-            <img src="./assests/eva-breuer.png" alt="eva-breuer"
-              class="w-[43px] h-[43px]">
-            <div>
-              <p class="text-[16px] font-[700] text-[#18181B] mb-1">Eva
-                Breuer</p>
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-19 md:w-25">
-            </div>
-          </div>
-        </div>
-        <!-- 12th card end -->
-      </div>
-    </section>
-
-    <!-- === section start === -->
-    <section>
-      <div class="bg-[#FAEFEB] border-y-1 border-[#FAC800]">
-
-        <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-20">
-          <div class="mt-13 md:mt-20 ml-[22px] md:ml-[57px]">
-            <h1 class="text-[24px] md:text-[40px] font-[700] md:w-80 mb-6 md:leading-[50px]">Häufig
-              gestellte Fragen</h1>
-            <p class="text-[14px] md:text-xl md:leading-[32px] md:w-90">Brauchen Sie mehr
-              Informationen? Hier finden Sie <br class="md:hidden"> die Antworten.</p>
-          </div>
-
-          <div>
-            <div
-              class="bg-[#FFFFFF80] w-[331px] h-[300px] md:w-[766px] md:h-[182px] border-[#FAC800] border-1 rounded-[20px] mt-8 md:mt-20 mb-[14px] md:mb-[18px] ml-[22px] md:ml-0">
-              <h1 class="text-[16px] md:text-[18px] font-bold mt-[28px] md:mt-[34px] ml-[22px] md:ml-8 mb-3">Was ist die
-                Cloud-Telefonie von <br class="md:hidden"> Hostprofis?</h1>
-              <p class="md:w-165 leading-[22px] md:leading-[24px] ml-[22px] md:ml-8">Eine komplette Telefonanlage
-                für <br class="md:hidden"> Unternehmen, die über das Internet <br class="md:hidden">
-                funktioniert. Sie bietet alle Funktionen eines <br class="md:hidden"> klassischen
-                Telefonsystems und zusätzlich <br class="md:hidden"> moderne Features
-                wie mobile Apps und <br class="md:hidden"> Videotelefonie – alles betreut von einem <br class="md:hidden">
-                lokalen österreichischen Team.</p>
-            </div>
-            <!-- FAQs start -->
-            <div
-              class="flex items-center justify-between bg-[#FAF7EB] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Brauche ich spezielle Telefone <br class="md:hidden">
-                oder Geräte?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Kann ich meine bestehenden <br class="md:hidden">
-                Telefonnummern behalten?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[18px] font-[700]">Kann ich das System im <br class="md:hidden">
-                Homeoffice nutzen?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Wie viel kostet das?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Gibt es
-                Einrichtungsgebühren?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] text-[18px] font-[700]">Wie lange dauert die <br class="md:hidden">
-                Einrichtung?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] text-[18px] font-[700]">Wo werden meine Daten <br class="md:hidden">
-                gespeichert?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Wie lernen meine Mitarbeiter, <br class="md:hidden">
-                das System zu nutzen?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Welchen Support bieten Sie?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Wo sitzt Ihr Support-Team?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Was, wenn ich Änderungen an <br class="md:hidden">
-                meinem System brauche?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Kann ich das System mit <br class="md:hidden"> meinem
-                CRM integrieren?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[16px] md:text-[18px] font-[700]">Welche <br class="md:hidden"> Internetgeschwindigkeit <br class="md:hidden">
-                brauche ich?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-
-            <div
-              class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-13 md:mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
-              <p class="text-[18px] font-[700]">Was passiert, wenn mein <br class="md:hidden"> Internet
-                ausfällt?</p>
-              <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
-            </div>
-            <!-- FAQs end -->
           </div>
         </div>
       </div>
-    </section>
-    <!-- === section end === -->
 
-    <!-- === section start === -->
-    <section>
-      <div class="flex flex-col md:flex md:flex-row md:justify-center">
-        <div class="relative z-[4] ml-[22px] md:ml-10">
-          <div class="mt-13 md:mt-30">
-            <h1 class="text-[24px] md:text-[52px] md:leading-[61px] font-[700] md:w-190 mb-4 md:mb-5">Starten
-              Sie jetzt mit <br class="md:hidden"> moderner Cloud-Telefonie
-            </h1>
-            <p class="text-[14px] md:text-xl md:w-170 mb-[18px] md:mb-8">Vereinbaren Sie ein kurzes Gespräch
-              mit unserem <br class="md:hidden"> Team und erleben Sie, wie viel
-              einfacher <br class="md:hidden"> Geschäftstelefonie sein kann.</p>
+      <!-- === form === -->
+
+      <div
+        class="mt-[50px] md:mt-[55px] bg-[#FAF7EB] pt-[35px] pb-[29px] md:py-[38px] md:px-[32px] rounded-[20px] border-[#FAC800] border-1 mb-[79px] w-[335px] md:w-[550px] md:h-[720px] ml-[20px] md:ml-0">
+        <h2 class="font-[800] text-[24px] md:text-[28px] text-center md:w-[466px] mb-[34px]">Jetzt
+          100% kostenlos <br class="md:hidden"> und unverbindlich <br class="md:hidden">
+          beraten lassen!</h2>
+
+        <form action>
+          <div class="md:flex">
+            <div class="ml-[22px]">
+              <p class="text-[#344054] text-[12px] md:text-[14px] md-[3px] md:mb-[6px]">Vor-
+                und
+                Nachname</p>
+              <input type="text" placeholder="Max Mustermann"
+                class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
+            </div>
+
+            <div class="ml-[22px] md:ml-[12px]">
+              <p class="text-[#344054] text-[14px] mb-[6px]">Firmenname</p>
+              <input type="text" placeholder="Mustermann GmbH"
+                class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
+            </div>
           </div>
 
-          <div class="flex items-center gap-3 mb-2">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon" class="size-4 md:size-5">
-            <p class="text-[14px] md:text-xl"><strong>Sparen Sie bis zu 60%</strong> Ihrer
-              Kosten</p>
+          <div class="md:flex">
+            <div class="ml-[22px]">
+              <p class="text-[#344054] text-[14px] mb-[6px]">Email</p>
+              <input type="text" placeholder="max@mustermann.at"
+                class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
+            </div>
+
+            <div class="ml-[22px] md:ml-[12px]">
+              <p class="text-[#344054] text-[14px] mb-[6px]">Telefonnummer</p>
+              <input type="text" placeholder="+43 123456789"
+                class="text-[#667085] text-[12px] md:text-[14px] border-[#D0D5DD] border-1 py-3 md:py-[14px] pr-[16px] pl-[26px] rounded-[50px] md:rounded-[80px] bg-[#fff] w-[291px] md:w-[227px]">
+            </div>
           </div>
 
-          <div class="flex items-center gap-3 mb-2">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon" class="size-4 md:size-5">
-            <p class="text-[14px] md:text-xl">Tätigen Sie Geschäftsanrufe <strong>von jedem
-                Gerät, überall</strong></p>
-          </div>
+          <div class="md:ml-6 mt-[5px]">
+            <p class="ml-[22px] md:ml-[0px] text-[#344054] text-[12px]  md:text-[14px] mb-[6px]">Wie
+              viele
+              Mitarbeiter hat Ihr Unternehmen?</p>
 
-          <div class="flex items-center gap-3 mb-11">
-            <img src="./assests/verified-check-icon.png"
-              alt="verified-check-icon" class="size-4 md:size-5">
-            <p class="text-[14px] md:text-xl">Professionelle Anrufverwaltung mit
-              <strong>lokalem Support aus Österreich</strong>
-            </p>
-          </div>
+            <select name id
+              class="text-[#667085] text-[14px] bg-[#fff] border-[#D0D5DD] border-1 md:py-[14px] py-[11px] px-[10px] md:pr-[155px] md:pl-[26px] rounded-[80px] mb-[22px] md:mb-[34px] ml-[22px] md:ml-[0px]">
+              <option value>Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
+            </select>
 
-          <div>
-            <div>
+            <div class="flex justify-center">
               <button
-                class="bg-[#AB8900] py-4 px-15 md:px-9 rounded-[100px] mb-6 text-[12px] md:text-[16px] text-[#FFFFFF] font-[800]">Jetzt
+                class="bg-[#AB8900] py-[15px] px-[39px] md:py-[16px] md:px-[95px]  rounded-[63px] md:rounded-[100px] text-[#fff] text-[12px] md:text-[16px] font-[800] cursor-pointer">Jetzt
                 Kostenlos Beraten Lassen</button>
             </div>
 
-            <div class="flex items-center gap-2 mb-20 ml-9 md:ml-2">
-              <img src="./assests/golden-star.png" alt="golden-star"
-                class="w-[55px] h-[20px] md:w-[80px] md:h-[20px]">
-              <p class="text-[12px] md:text-[14px]">Über <strong>40.000 </strong> zufriedene
-                Kunden</p>
+            <!-- === five logos === -->
+
+            <div class="flex gap-2 justify-center mt-[22px] md:mt-[44px]">
+              <img src="./assests/top-software.png" alt="top-software"
+                class="w-[55px] h-[70px] md:w-[88px] md:h-[100px]">
+              <img src="./assests/pc-pro.png" alt class="w-[48px] h-[70px] md:w-[68px] md:h-[100px]">
+              <img src="./assests/Leader-enterprise.png" alt="leader-enterprise"
+                class="w-[55px] h-[70px] md:w-[89px] md:h-[100px]">
+              <img src="./assests/captera.png" alt class="w-[55px] h-[70px] md:w-[89px] md:h-[100px]">
+              <img src="./assests/business-software.png" alt="business-software"
+                class="w-[55px] h-[70px] md:w-[44px] md:h-[100px]">
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- === section end === -->
+
+  <!-- === section start -->
+  <section>
+
+    <!-- nine logos together -->
+    <div class="bg-[#FAEFEB] pt-[17px] md:pt-[69px]">
+      <p class="text-center mb-[25px] md:mb-[27px] text-[16px] md:text-xl font-bold"><strong>Die
+          #1 bei 40.000+
+          Unternehmen</strong></p>
+
+      <div
+        class="flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:gap-2 pb-[20px] md:pb-[65px] mb-[52px] md:mb-[76px]">
+        <div class="flex gap-7 md:gap-0">
+          <img src="./assests/fuji-tsu.png" alt="fuji-tsu" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/berndorf.png" alt="berndorf" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/fielman.png" alt="fielman" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+        </div>
+
+        <div class="flex gap-7 md:gap-0">
+          <img src="./assests/grohe.png" alt="grohe" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/hectas.png" alt="hectas" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/lindth.png" alt="lindth" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+        </div>
+
+        <div class="flex gap-7 md:gap-0">
+          <img src="./assests/dachser.png" alt="dashser" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/universtat.png" alt="universtat" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+          <img src="./assests/panapina.png" alt="panapina" class="w-[86px] h-[45px] md:w-[132px] md:h-[70px]">
+        </div>
+      </div>
+
+    </div>
+    <!-- nine logos together end -->
+  </section>
+
+  <section>
+    <!-- nine logos bottom content -->
+    <div>
+      <h1 class="md:text-center text-[24px] md:text-[40px] font-[700] mb-[22px] 
+        ml-[22px] md:ml-[0px]">Ihre komplette
+        Cloud Telefonanlage schon ab <br class="md:hidden"> €14,90 pro
+        Nutzer</h1>
+
+      <div class="flex justify-center">
+        <p
+          class="w-[331px] md:w-250 md:text-center leading-[22px] md:leading-[32px] text-[14px] md:text-xl mb-10 md:mb-40">
+          Sie
+          erhalten
+          alle <strong>Premium-Funktionen einer
+            Enterprise-Telefonanlage</strong>, kombiniert mit
+          <strong>maximaler Benutzerfreundlichkeit</strong> und das
+          zu einem <strong>Bruchteil der Kosten</strong>. <br class="md:hidden"> <br class="md:hidden"> Wir kümmern uns
+          um
+          den perfekten Start und den reibungslosen
+          Betrieb – Sie genießen modernste Kommunikationstechnik ohne
+          komplizierte Installation.
+        </p>
+      </div>
+    </div>
+
+    <!-- === six woman images === -->
+    <div class="container mx-auto md:flex md:justify-center md:items-center md:gap-8 md:mb-16 md:mb-58">
+      <div class="md:w-[660px] md:h-[479px]">
+        <img src="./assests/six-woman-img.png" alt="six-woman-img">
+      </div>
+
+      <div class="mt-[28px]">
+        <h1 class="text-[22px] md:text-4xl font-bold md:w-130 mb-4 leading-[29px] md:leading-[52px]">Keine
+          IT-Kopfschmerzen beim <br class="md:hidden"> Wechsel in die
+          Cloud</h1>
+
+        <p class="md:w-125 mb-8 text-[14px] md:text-xl leading-[21px] md:leading-[32px]">Wir
+          übernehmen den
+          gesamten Umstieg von der <br class="md:hidden"> alten Telefonanlage
+          in die Cloud für Sie.
+          <strong> Schnell, <br class="md:hidden"> einfach und
+            kostenlos.</strong>
+        </p>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p
+            class="md:w-[495px] md:h-[54px] mb-[18px] md:mb-2 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
+            Ihr
+            System ist in nur <strong>14 Tagen einsatzbereit</strong> –
+            professionell eingerichtet und perfekt <br class="md:hidden">
+            konfiguriert. </p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p
+            class="md:w-[407px] md:h-[54px] mb-[18px] md:mb-2 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
+            Sie
+            bleiben während dem Umstieg für Ihre <br class="md:hidden"> Kunden
+            <strong>100% ohne
+              Unterbrechung <br class="md:hidden"> erreichbar. </strong>
+          </p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p
+            class="md:w-[430px] md:h-[54px] mb-[64px] md:mb-15 md:mb-6 text-[14px] md:text-[18px] md:leading-[27px] leading-[19px]">
+            Wir
+            kümmern uns um die komplette Nummernübertragung, damit
+            <strong>Ihre alten <br class="md:hidden"> Nummern nahtlos weiter
+              funktionieren.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- === six woman images style end === -->
+  </section>
+
+  <section>
+    <!-- == support section == -->
+
+    <div class="flex flex-col-reverse md:flex md:flex-row md:justify-center md:items-center md:gap-8 md:mb-58">
+
+      <div class="md:ml-[0px]">
+        <div>
+          <h1 class="font-bold text-[22px] md:text-4xl w-120 mb-3 md:mb-5 leading-[29px] md:leading-[52px]">Persönlicher
+            und regionaler <br class="md:hidden"> Support aus Österreich</h1>
+
+          <p class="text-[14px] md:text-xl md:w-135 leading-[21px] md:leading-[32px] md:mb-8 mb-7">Wir
+            sind ein
+            österreichisches Unternehmen mit <br class="md:hidden"> Standorten
+            in allen
+            Bundesländern. Sie erreichen <br class="md:hidden"> uns jederzeit
+            – und bei dringenden
+            Fällen sind wir <br class="md:hidden"> blitzschnell vor Ort!</p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+
+          <p class="md:w-120 mb-[18px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]"><strong>Ihr
+              persönlicher, lokaler Experte kennt <br class="md:hidden"> Ihre
+              Bedürfnisse</strong> –
+            kein lästiges <br class="md:hidden"> Weiterleiten an dutzende
+            Ansprechpartner.</p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+
+          <p class="md:w-120 mb-[18px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]">Unser
+            <strong>
+              Expertenteam </strong> gewährleistet einen <br class="md:hidden"> <strong>reibungslosen
+              Betrieb,</strong> ohne Aufwand für Ihr <br class="md:hidden">
+            Unternehmen.
+          </p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p class="md:w-125 mb-[64px] md:mb-2 text-[14px] md:text-[18px] leading-[19px] md:leading-[27px]">Verlassen
+            Sie sich
+            auf <strong>erstklassigen Support <br class="md:hidden"> aus
+              Österreich</strong> mit
+            persönlicher Betreuung <br class="md:hidden"> vor Ort.</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="./assests/m-and-w-pic.png" alt="m-and-w-pic" class="hidden md:block md:w-[658px] md:h-[
+        479px]">
+
+        <img src="./assests/m-and-w-pic.png" alt="m-and-w-pic"
+          class="md:hidden mb-[28px]">
+      </div>
+
+    </div>
+  </section>
+  <!-- end support section -->
+
+  <section>
+    <!-- === Business-Telefonie Features Section start === -->
+    <div class="flex flex-col md:flex md:flex-row md:justify-center md:items-center md:gap-22 md:mb-58">
+      <div class="md:w-[589px] md:h-[443px]">
+        <img src="./assests/chat-mb-img.jpg" alt="chat-mb-img">
+      </div>
+
+      <div>
+        <h1
+          class="text-[22px] md:text-4xl font-bold md:w-130 mb-3 md:mb-4 leading-[29px] md:leading-[52px] mt-7 md:mt-0">
+          Über 150
+          Premium Funktionen <br class="md:hidden"> für Ihre
+          Business-Telefonie</h1>
+
+        <p class="md:w-133 mb-7 md:mb-8 text-[14px] md:text-xl leading-[21px] md:leading-[32px]">Mit
+          unserer
+          Cloud-Telefonanlage erhalten Sie alle <br class="md:hidden">
+          Funktionen einer
+          Enterprise-Telefonanlage – nur <br class="md:hidden"> einfacher zu
+          bedienen und zu einem
+          Bruchteil der <br class="md:hidden"> Kosten.</p>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p class="md:w-[520px] md:h-[54px] mb-[18px] md:mb-3 text-[14px] md:text-xl leading-[19px] md:leading-[32px]">
+            Eine
+            smarte <strong>digitale Rezeption</strong> leitet Ihre <br class="md:hidden"> Anrufer
+            sofort zum richtigen Ansprechpartner <br class="md:hidden">
+            weiter.</p>
+        </div>
+
+        <div class="flex gap-3">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p class="md:w-[521px] md:h-[64px] mb-[18px] md:mb-3 text-[14px] md:text-xl leading-[19px] md:leading-[32px]">
+            Unser
+            <strong>intelligentes Warteschleifensystem</strong> <br class="md:hidden"> mit
+            <strong>Rückrufoptionen</strong> sorgt für <strong>zufriedene <br class="md:hidden">
+              Kunden.</strong>
+          </p>
+        </div>
+
+        <div class="flex gap-3 mb-16 md:mb-0">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+            class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+          <p class="md:w-[510px] md:h-[64px] text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Nahtlose
+            Anrufweiterleitung auf mobile <br class="md:hidden"> Geräte, Call
+            Recording,
+            Konferenzschaltungen, <br class="md:hidden"> <strong>und vieles
+              mehr.</strong></p>
+        </div>
+      </div>
+    </div>
+    <!-- == Business-Telefonie Features Section end == -->
+
+  </section>
+  <!-- === multi-device calling feature Start === -->
+
+  <div class="flex flex-col-reverse md:flex md:flex-row md:justify-center md:items-center md:gap-20 md:mb-58">
+    <div>
+      <div>
+        <h1 class="text-[22px] md:text-4xl font-bold md:w-135 leading-[29px] md:leading-[52px] mb-3 md:mb-5 mt-7">
+          Professionelle <br class="md:hidden">
+          Geschäftsanrufe von jedem <br class="md:hidden"> Gerät aus tätigen</h1>
+        <p class="text-[14px] md:text-xl md:w-135 leading-[21px] md:leading-[32px] mb-7 md:mb-8">Bleiben Sie überall
+          erreichbar – ob im Büro, <br class="md:hidden"> unterwegs oder im Home-Office:</p>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+          class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+        <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] mb-4">Nutzen Sie Ihre
+          geschäftliche Rufnummer auf <br class="md:hidden"> allen Geräten: <strong>Tischtelefon,
+            Smartphone <br class="md:hidden"> oder Computer.</strong></p>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+          class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+        <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] mb-4">Wechseln Sie
+          nahtlos zwischen <br class="md:hidden"> <strong>verschiedenen Arbeitsorten.</strong> Ihre <br
+            class="md:hidden">
+          Erreichbarkeit bleibt konstant.</p>
+      </div>
+
+      <div class="flex gap-3 mb-16">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+          class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+        <p class="text-[14px] md:text-[18px] md:w-120 leading-[19px] md:leading-[27px] md:mb-4">Ermöglichen Sie
+          Ihrem Team <strong>maximale <br class="md:hidden"> Bewegungsfreiheit</strong> bei
+          gleichbleibend <br class="md:hidden"> <strong>professionellem Auftreten.</strong></p>
+      </div>
+    </div>
+
+    <div>
+      <img src="./assests/telephone-two-mb-img.jpg" alt="telephone-two-mb-img"
+        class="md:w-[620px] md:h-[440px] ">
+    </div>
+  </div>
+  <!-- === multi-device calling feature end === -->
+  </section>
+
+  <!-- === microsoft image === -->
+
+  <div
+    class="flex flex-col md:flex md:flex-row md:justify-center md:items-center md:gap-20 mb-13 md:mb-32">
+    <div>
+      <img src="./assests/microsoft-img.png" alt="microsoft-img"
+        class="md:w-[620px] md:h-[443px] mb-7 md:mb-0">
+    </div>
+
+    <div>
+      <div>
+        <h1 class="text-[22px] md:text-4xl font-bold md:w-130 leading-[29px] md:leading-[52px] mb-3 md:mb-4">Nahtlose
+          Integration mit Ihren <br class="md:hidden"> bestehenden Systemen</h1>
+        <p class="text-[14px] md:text-xl leading-[21px] md:leading-[32px] md:w-125 mb-7 md:mb-8">Vernetzen Sie Ihre
+          Kommunikation <strong>auf Knopfdruck</strong> <br class="md:hidden"> mit all Ihren Tools
+          und Geschäftsprozessen:</p>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="w-[24px] h-[24px]">
+        <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-122 mb-[18px] md:mb-2">Steigern Sie Ihre
+          Servicequalität durch <strong> <br class="md:hidden"> sofortigen Zugriff auf
+            Kundeninformationen <br class="md:hidden"> bei eingehenden Anrufen.</strong></p>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="w-[24px] h-[24px]">
+        <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-90 mb-[18px] md:mb-2">Dokumentieren Sie
+          jede Kundeninteraktion <strong>automatisch</strong> <br class="md:hidden"> in Ihrem
+          CRM-System.</p>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="w-[24px] h-[24px]">
+        <p class="text-[14px] md:text-[18px] leading-[19px] md:leading-[27px] w-120 mb-[18px] md:mb-2">Optimieren Sie
+          Ihre
+          Workflows durch direkte <br class="md:hidden"> <strong>Verknüpfung von Telefonaten mit
+            digitalen <br class="md:hidden"> Kundenakten.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- === section end === -->
+
+  <!-- === section start === -->
+
+  <section>
+    <div class="bg-[#FAF7EB] border-y-1 border-[#FAC800] md:mb-20">
+      <div class="md:flex md:flex-col  md:items-center pt-13 md:pt-28 md:mb-22  ml-[22px] md:ml-0">
+        <h1 class="text-[24px] leading-[32px] md:leading-0 md:text-[40px] font-bold md:text-center mb-9 md:mb-8">60%
+          weniger Kosten
+          bei <br class="md:hidden"> 100x mehr Leistung</h1>
+
+        <div>
+          <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[18px] md:mb-2">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+            <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Genießen Sie volle
+              Planungssicherheit durch <br class="md:hidden"> eine
+              <strong>All-inclusive-Pauschale</strong> ohne <br class="md:hidden">
+              Überraschungen.
+            </p>
+          </div>
+
+          <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[18px] md:mb-2">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+            <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]">Bis zu <strong>60%
+                Kostenersparnis</strong> gegenüber <br class="md:hidden"> konventionellen
+              Telefonanlagen – bei deutlich <br class="md:hidden"> mehr Funktionsumfang.</p>
+          </div>
+
+          <div class="flex gap-3 md:flex md:items-center md:gap-3 mb-[38px] md:mb-2">
+            <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+              class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]">
+            <p class="text-[14px] md:text-xl leading-[19px] md:leading-[32px]"><strong>Reduzieren Sie Ihre
+                Mobilfunkkosten</strong> durch <br class="md:hidden"> intelligente Cloud Telefonie
+              auf allen Geräten.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- two card cloud telefonie pakete -->
+
+      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-8 ml-[22px] md:ml-0">
+        <div
+          class=" bg-[#fff] w-[331px] h-[387px] md:w-[630px] md:h-[400px] rounded-[24px] border-[#FAC800] border-1 pt-[32px] md:pt-[40px] pr-[22px] md:pr-[20px] pl-[22px] md:pl-[52px] mb-8">
+          <div class="flex gap-3 items-center md:flex md:items-center md:gap-5 mb-7">
+            <img src="./assests/telephone-icon.png" alt="telephone-icon"
+              class="w-[29px] h-[29px] md:w-[38px] md:h-[38px]">
+            <p class="text-[18px] md:text-[34px] text-[#C8A101] font-[700]">Cloud Telefonie
+              Pakete</p>
+          </div>
+
+          <div class="flex flex-col md:flex md:flex-row md:gap-12">
+            <div>
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px] font-semibold"><strong>Behalten Sie Ihre
+                    Nummern</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px] font-semibold"><strong>Nutzbar auf jedem
+                    Gerät</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px] font-semibold"><strong>150+ Funktionen
+                    inklusive</strong></p>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px] font-semibold"><strong>Behalten Sie Ihre
+                    Nummern</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Nutzbar auf jedem
+                    Gerät</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-6">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px] font-semibold"><strong>150+ Funktionen
+                    inklusive</strong></p>
+              </div>
+            </div>
+          </div>
+          <hr class="border-[#FAC800] mb-6">
+
+          <!-- hr below text -->
+          <div class="flex gap-8 md:gap-20">
+            <div>
+              <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
+              <p><span class="text-[#7E6800] text-[17px] md:text-[40px] font-[700]">€14,90</span>
+                <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
+              </p>
+              <p class="text-[12px] md:text-[16px]">pro Nutzer</p>
+            </div>
+
+            <div>
+              <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
+              <p><span class="text-[#7E6800] text-[17px] md:text-[40px] font-[700]">€58,90</span>
+                <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
+              </p>
+              <p class="text-[12px] md:text-[16px]">für unbegrenzte Nutzer</p>
             </div>
           </div>
         </div>
 
-        <div class="relative">
+        <div
+          class="bg-[#fff] w-[331px] h-[387px] md:w-[630px] md:h-[400px] rounded-[24px] border-[#FAC800] border-1 pt-[35px] md:pt-[40px] pr-[22px] md:pr-[20px] pl-[22px] md:pl-[52px] ">
+          <div class="flex items-center gap-3 md:flex md:items-center md:gap-5 mb-[24px] md:mb-7">
+            <img src="./assests/prize-tag-icon.png" alt="prize-tag-icon"
+              class="w-[27px] h-[27px] md:w-[38px] md:h-[38px]">
+            <p class="text-[18px] md:text-[34px] text-[#C8A101] font-[700]">Telefon
+              Tarife</p>
+          </div>
+
+          <div class="flex flex-col md:flex md:flex-row md:gap-12">
+            <div>
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Festnetz & Mobil in
+                    AT</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Festnetz & Mobil in
+                    EU</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Unbegrenzte Nutzer</strong></p>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Einfache
+                    Anrufverwaltung</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-3">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Transparente
+                    Preise</strong></p>
+              </div>
+
+              <div class="flex gap-3 mb-6">
+                <img src="./assests/verified-check-icon.png" alt="verified-check-icon"
+                  class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                <p class="text-[12px] md:text-[16px]"><strong>Jederzeit kündbar</strong></p>
+              </div>
+            </div>
+          </div>
+          <hr class="border-[#FAC800] mb-6">
+
+          <!-- hr below text -->
+          <div class="flex gap-8 md:gap-20">
+            <div>
+              <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
+              <p><span class="text-[#7E6800] text-[17px] md:text-[35px] font-[700]">4,9
+                  Cent</span>
+                <span class="text-[12px] md:text-[25px] font-[700]">/ Minute</span>
+              </p>
+              <p class="text-[9px] md:text-[16px]">bei Freiminuten-Paketen</p>
+            </div>
+
+            <div>
+              <p class="text-[9px] md:text-[16px] leading-[13px] md:leading-[22px]">Schon ab</p>
+              <p><span class="text-[#7E6800] text-[17px] md:text-[30px] font-[700]">€14,90</span>
+                <span class="text-[12px] md:text-[25px] font-[700]">/ Monat</span>
+              </p>
+              <p class="text-[9px] md:text-[16px]">für unbegrentzte Minuten</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="flex justify-center">
+        <button
+          class="bg-[#AB8900] py-[15px] px-[59px] md:py-5 md:px-9 rounded-[63px] md:rounded-[100px] text-[#FFFFFF] text-[12px] md:text-[16px] font-extrabold mt-[38px] md:mt-[54px] mb-3 md:mb-[25px]">Jetzt
+          Kostenlos Beraten Lassen</button>
+      </div>
+
+      <div class="flex items-center gap-2 md:gap-4 justify-center mb-14 md:pb-15">
+        <img src="./assests/golden-star.png" alt="golden-star-img" class="w-18 md:w-25">
+        <p class="text-[12px] md:text-[14px]">Über <strong> 40.000 </strong> zufriedene
+          Kunden</p>
+      </div>
+    </div>
+  </section>
+  <!-- === section end === -->
+
+  <!-- === section start === -->
+
+  <section>
+    <!-- twelve cards section -->
+
+    <div class="md:text-center ml-[22px] md:ml-0 mt-13">
+      <h1 class="text-[24px]  md:text-4xl font-bold mb-4 md:mb-5">Das sagen unsere Kunden</h1>
+      <p class="text-[14px] md:text-[18px] mb-8 md:mb-15">Unternehmen wie Ihres vertrauen bereits auf <br
+          class="md:hidden">
+        Hostprofis</p>
+    </div>
+
+    <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
+      <!-- === 1st card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Früher
+            hatten unsere Kunden nur unsere
+            privaten Handynummern. Jetzt erreichen sie eine professionelle
+            automatische Zentrale, die sie direkt zum
+            richtigen Ansprechpartner weiterleitet"</p>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-5">
+          <img src="./assests/michelle-menger.png" alt="michelle-menger"
+            class="w-[43px] h-[43px] md:w-[43px] md:h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Michelle
+              Menger</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 1st card end === -->
+
+      <!-- === 2nd card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5">
+        <div>
+          <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Wir
+            haben jährlich €3.000 nur für Wartung
+            bezahlt. Mit Hostprofis konnten wir unsere Telefonkosten um 55 %
+            senken und alles funktioniert reibungslos!"
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/jonathan-brendel.png" alt="jonathan-brendel"
+            class="w-[43px] h-[43px] md:w-[43px] md:h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Jonathan
+              Brendel</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 2nd card end === -->
+
+      <!-- === 3rd card start === -->
+
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5">
+        <div>
+          <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Wir
+            haben jährlich €3.000 nur für Wartung
+            bezahlt. Mit Hostprofis konnten wir unsere Telefonkosten um 55 %
+            senken und alles funktioniert reibungslos!"
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/gregor-img.png" alt="gregor-img" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Gregor
+              Zeisl</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 w-25">
+          </div>
+        </div>
+      </div>
+      <!-- 3rd card end -->
+    </div>
+
+    <!-- === 4th card start === -->
+
+    <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
+      <!-- === 4th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 
+          pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1 ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Keine
+            Überraschungsrechnungen oder hohe
+            Wartungskosten mehr. Wir zahlen jeden Monat einen festen Betrag,
+            und Hostprofis kümmert sich um alles."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/ben-diemberger.png" alt="ben-diemberger" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Ben
+              Diemberger</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 4th card end === -->
+
+      <!-- === 5th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Als
+            kleines Unternehmen wollten wir
+            professioneller wirken. Die automatischen Begrüßungen und die
+            Anrufweiterleitung begeistern unsere Kunden!"
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/kilian-kollek.png" alt="kilian-kollek" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Kilian
+              Kollek</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 5th card end === -->
+
+      <!-- === 6th card start === -->
+
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[221px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Ich
+            hatte Angst vor der ISDN-Umstellung,
+            nachdem unser Anbieter uns €4.631 in Rechnung stellen wollte.
+            Hostprofis hat alles für eine einfache
+            monatliche Gebühr ohne zusätzliche Kosten erledigt."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/matheo-cella.png" alt="matheo-cella" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Matheo
+              Cella</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- 6th card end -->
+    </div>
+
+    <!-- 7th card start -->
+    <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-7">
+      <!-- === 7th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Keine
+            verpassten Anrufe mehr, kein Chaos mit
+            Mobiltelefonen – alles funktioniert wie ein großes
+            Unternehmenssystem."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/martina-bogen.png" alt="martina-bogen" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Martina
+              Bogen</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 7th card end === -->
+
+      <!-- === 8th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-80 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Unser
+            altes System hat uns ein Vermögen für
+            Wartung und Mobilfunkkosten gekostet. Jetzt haben wir bessere
+            Funktionen für die Hälfte der Kosten!"</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/natalie-mateschitz.png" alt="natalie-mateschitz" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Natalie
+              Mateschitz</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 8th card end === -->
+
+      <!-- === 9th card start === -->
+
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Unsere
+            Kunden merken nicht, ob wir im Büro
+            oder unterwegs sind. Das System lässt unser kleines Team wie eine
+            viel größere Organisation wirken."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/oliver-makart.png" alt="oliver-makart" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Oliver
+              Makart</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- 9th card end -->
+    </div>
+
+    <!-- 10th card start -->
+    <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-7 md:mb-20">
+      <!-- === 10th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Das
+            Beste? Keine Koordination mehr zwischen
+            verschiedenen Anbietern, wenn etwas schiefgeht. Ein Anruf bei
+            Hostprofis, und alles ist geregelt – für einen
+            Bruchteil der Kosten, die wir früher hatten."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/aaron-mesmer.png" alt="aaron-mesmer" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Aaron
+              Mesmer</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 10th card end === -->
+
+      <!-- === 11th card === -->
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60 py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-5 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Als
+            unser ISDN gekündigt wurde, brauchten wir
+            schnell eine zukunftssichere Lösung. Hostprofis hat sich um alles
+            gekümmert – absolut TOP!"</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/tim-dorn.png" alt="tim-dorn" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Tim Dorn</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- === 11th card end === -->
+
+      <!-- === 12th card start === -->
+
+      <div
+        class="bg-[#FAF7EB] w-[331px] h-[211px] md:w-99 md:h-60  py-5 md:py-6 pr-[22px] md:pr-[47px] pl-[22px] md:pl-[28px] rounded-[20px] border-[#FAC800] border-1  ml-[22px] md:ml-0 mb-13 md:mb-0">
+        <div>
+          <p class="md:w-75 text-[14px] md:text-[16px] text-[#18181B] leading-[22px] md:leading-[24px] mb-3">"Ich
+            war echt nervös wegen dem Wechsel. Aber
+            Hostprofis hat alles organisiert und unser Team an einem
+            Nachmittag geschult."</p>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <img src="./assests/eva-breuer.png" alt="eva-breuer" class="w-[43px] h-[43px]">
+          <div>
+            <p class="text-[16px] font-[700] text-[#18181B] mb-1">Eva
+              Breuer</p>
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-19 md:w-25">
+          </div>
+        </div>
+      </div>
+      <!-- 12th card end -->
+    </div>
+  </section>
+
+  <!-- === section start === -->
+  <section>
+    <div class="bg-[#FAEFEB] border-y-1 border-[#FAC800]">
+
+      <div class="flex flex-col md:flex md:flex-row md:justify-center md:gap-20">
+        <div class="mt-13 md:mt-20 ml-[22px] md:ml-[57px]">
+          <h1 class="text-[24px] md:text-[40px] font-[700] md:w-80 mb-6 md:leading-[50px]">Häufig
+            gestellte Fragen</h1>
+          <p class="text-[14px] md:text-xl md:leading-[32px] md:w-90">Brauchen Sie mehr
+            Informationen? Hier finden Sie <br class="md:hidden"> die Antworten.</p>
+        </div>
+
+        <div>
+          <div
+            class="bg-[#FFFFFF80] w-[331px] h-[300px] md:w-[766px] md:h-[182px] border-[#FAC800] border-1 rounded-[20px] mt-8 md:mt-20 mb-[14px] md:mb-[18px] ml-[22px] md:ml-0">
+            <h1 class="text-[16px] md:text-[18px] font-bold mt-[28px] md:mt-[34px] ml-[22px] md:ml-8 mb-3">Was ist die
+              Cloud-Telefonie von <br class="md:hidden"> Hostprofis?</h1>
+            <p class="md:w-165 leading-[22px] md:leading-[24px] ml-[22px] md:ml-8">Eine komplette Telefonanlage
+              für <br class="md:hidden"> Unternehmen, die über das Internet <br class="md:hidden">
+              funktioniert. Sie bietet alle Funktionen eines <br class="md:hidden"> klassischen
+              Telefonsystems und zusätzlich <br class="md:hidden"> moderne Features
+              wie mobile Apps und <br class="md:hidden"> Videotelefonie – alles betreut von einem <br class="md:hidden">
+              lokalen österreichischen Team.</p>
+          </div>
+          <!-- FAQs start -->
+          <div
+            class="flex items-center justify-between bg-[#FAF7EB] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Brauche ich spezielle Telefone <br class="md:hidden">
+              oder Geräte?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Kann ich meine bestehenden <br class="md:hidden">
+              Telefonnummern behalten?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[18px] font-[700]">Kann ich das System im <br class="md:hidden">
+              Homeoffice nutzen?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Wie viel kostet das?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Gibt es
+              Einrichtungsgebühren?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] text-[18px] font-[700]">Wie lange dauert die <br class="md:hidden">
+              Einrichtung?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] text-[18px] font-[700]">Wo werden meine Daten <br class="md:hidden">
+              gespeichert?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Wie lernen meine Mitarbeiter, <br class="md:hidden">
+              das System zu nutzen?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Welchen Support bieten Sie?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Wo sitzt Ihr Support-Team?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Was, wenn ich Änderungen an <br class="md:hidden">
+              meinem System brauche?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Kann ich das System mit <br class="md:hidden"> meinem
+              CRM integrieren?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[16px] md:text-[18px] font-[700]">Welche <br class="md:hidden"> Internetgeschwindigkeit <br
+                class="md:hidden">
+              brauche ich?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+
+          <div
+            class="flex items-center justify-between bg-[#FFFFFF80] py-4 px-[22px] md:px-8 rounded-[20px] mb-13 md:mb-[18px] border-[#FAC800] border-1 w-[331px] h-[88px] md:w-[766px] md:h-[68px] ml-[22px] md:ml-0">
+            <p class="text-[18px] font-[700]">Was passiert, wenn mein <br class="md:hidden"> Internet
+              ausfällt?</p>
+            <img src="./assests/faq-icon.png" alt="faq-icon" class="w-[19px] h-[19px] md:size-7">
+          </div>
+          <!-- FAQs end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- === section end === -->
+
+  <!-- === section start === -->
+  <section>
+    <div
+      class="flex flex-col md:flex md:flex-row md:justify-center bg-[url(./assests/call-center-woman-img.jpg)] cover ">
+      <div class="relative z-[4] ml-[22px] md:ml-10">
+        <div class="mt-13 md:mt-30">
+          <h1 class="text-[24px] md:text-[52px] md:leading-[61px] font-[700] md:w-190 mb-4 md:mb-5">Starten
+            Sie jetzt mit <br class="md:hidden"> moderner Cloud-Telefonie
+          </h1>
+          <p class="text-[14px] md:text-xl md:w-170 mb-[18px] md:mb-8">Vereinbaren Sie ein kurzes Gespräch
+            mit unserem <br class="md:hidden"> Team und erleben Sie, wie viel
+            einfacher <br class="md:hidden"> Geschäftstelefonie sein kann.</p>
+        </div>
+
+        <div class="flex items-center gap-3 mb-2">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="size-4 md:size-5">
+          <p class="text-[14px] md:text-xl"><strong>Sparen Sie bis zu 60%</strong> Ihrer
+            Kosten</p>
+        </div>
+
+        <div class="flex items-center gap-3 mb-2">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="size-4 md:size-5">
+          <p class="text-[14px] md:text-xl">Tätigen Sie Geschäftsanrufe <strong>von jedem
+              Gerät, überall</strong></p>
+        </div>
+
+        <div class="flex items-center gap-3 mb-11">
+          <img src="./assests/verified-check-icon.png" alt="verified-check-icon" class="size-4 md:size-5">
+          <p class="text-[14px] md:text-xl">Professionelle Anrufverwaltung mit
+            <strong>lokalem Support aus Österreich</strong>
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <button
+              class="bg-[#AB8900] py-4 px-15 md:px-9 rounded-[100px] mb-6 text-[12px] md:text-[16px] text-[#FFFFFF] font-[800]">Jetzt
+              Kostenlos Beraten Lassen</button>
+          </div>
+
+          <div class="flex items-center gap-2 mb-20 ml-9 md:ml-2">
+            <img src="./assests/golden-star.png" alt="golden-star" class="w-[55px] h-[20px] md:w-[80px] md:h-[20px]">
+            <p class="text-[12px] md:text-[14px]">Über <strong>40.000 </strong> zufriedene
+              Kunden</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="relative">
           <img src="./assests/call-center-woman-img.jpg"
             alt="call-center-woman-img" class="w-[892px] ">
           <img src="./assests/layer-blur.png" alt="layer-blur"
             class=" absolute top-0 right-27 ">
+        </div> -->
+    </div>
+
+    <!-- === footer === -->
+    <footer>
+      <div class="bg-[#000000] md:py-7">
+        <div class="flex flex-col items-center md:flex md:flex-row md:justify-center md:items-center md:gap-40">
+          <p class="text-[#CFCFCF] hidden md:block">© 2025 HostProfis ISP Telekom GmbH</p>
+          <img src="./assests/host-profis.svg" alt="host-profis"
+            class="cursor-pointer w-30 mt-8 md:mt-0 mb-[22px] md:mb-0">
+
+          <ul class="flex gap-7 mb-[22px] md:mb-0">
+            <li class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a href="#">Impressum</a></li>
+            <li class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a href="#">AGB</a></li>
+            <li class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a href="#">Datenschutz</a></li>
+          </ul>
+
+
+          <p class="text-[#CFCFCF] md:hidden block mb-8 md:mb-0">© 2025 HostProfis ISP Telekom GmbH</p>
         </div>
       </div>
+    </footer>
+    <!-- === footer end === -->
 
-      <!-- === footer === -->
-      <footer>
-        <div class="bg-[#000000] md:py-7">
-          <div class="flex flex-col items-center md:flex md:flex-row md:justify-center md:items-center md:gap-40">
-            <p class="text-[#CFCFCF] hidden md:block">© 2025 HostProfis ISP Telekom GmbH</p>
-            <img src="./assests/host-profis.svg" alt="host-profis"
-              class="cursor-pointer w-30 mt-8 md:mt-0 mb-[22px] md:mb-0">
-
-            <ul class="flex gap-7 mb-[22px] md:mb-0">
-              <li
-                class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a
-                  href="#">Impressum</a></li>
-              <li
-                class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a
-                  href="#">AGB</a></li>
-              <li
-                class="text-[#FFFFFF] text-[16px] font-[700] hover:text-[#FAC800]"><a
-                  href="#">Datenschutz</a></li>
-            </ul>
-
-                       
-            <p class="text-[#CFCFCF] md:hidden block mb-8 md:mb-0">© 2025 HostProfis ISP Telekom GmbH</p>
-          </div>
-        </div>
-      </footer>
-      <!-- === footer end === -->
-
-    </section>
-    <!-- === section end === -->
-  </body>
+  </section>
+  <!-- === section end === -->
+</body>
 
 </html>
